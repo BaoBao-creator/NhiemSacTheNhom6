@@ -460,6 +460,12 @@ body.theme-light .tag { background:rgba(255,255,255,.9); color:#1e293b; }
 .tag.small { font-size:10px; padding:3px 6px; }
 .tag.sel { font-size:12px; }
 
+/* Chỉ hiển thị nhãn theo đúng ngữ cảnh tương tác. */
+#labels .tag.end,
+#labels .tag.sel { visibility: hidden; }
+#labels.sequence-visible .tag.end,
+#labels.selection-visible .tag.sel { visibility: visible; }
+
 @media(max-width:768px) {
   #panel-zoom,#panel-helix,#panel-sequence,#panel-pair,#panel-info { width:auto; max-height:56vh; }
   #scalebar { top:12px; gap:10px; padding:6px 11px; }
@@ -634,6 +640,36 @@ window.HEYPROF_I18N = (function () {
   try {
     await runBundle('./vendor.bundle.gz');
     await runBundle('./assets.bundle.gz');
+
+    // Nhãn hai đầu mạch chỉ thuộc panel Trình tự.
+    const labels = document.getElementById('labels');
+    const sequencePanel = document.getElementById('panel-sequence');
+    const syncSequenceLabels = () => {
+      if (!labels || !sequencePanel) return;
+      labels.classList.toggle(
+        'sequence-visible',
+        !sequencePanel.classList.contains('hidden')
+      );
+    };
+
+    if (labels && sequencePanel) {
+      syncSequenceLabels();
+      new MutationObserver(syncSequenceLabels).observe(sequencePanel, {
+        attributes: true,
+        attributeFilter: ['class']
+      });
+
+      // Nhãn cặp bazơ chỉ xuất hiện sau khi người dùng nhấp vào mô hình.
+      const scene = document.getElementById('scene');
+      if (scene) {
+        scene.addEventListener('pointerdown', () => {
+          labels.classList.remove('selection-visible');
+        });
+        scene.addEventListener('click', () => {
+          labels.classList.add('selection-visible');
+        });
+      }
+    }
   } catch (error) {
     console.error(error);
     const notice = document.createElement('div');

@@ -27,3 +27,7 @@ Trang web tương tác giúp khám phá cấu trúc ADN ở bốn cấp độ: *
 ## Lưu ý
 
 Đây là bản đóng gói từ bộ mã nguồn được cung cấp trong cuộc trò chuyện. Các thư viện và nội dung bên trong được giữ lại để mô hình hoạt động độc lập trên GitHub Pages.
+
+## Quyền sử dụng và phân phối
+
+Gói ZIP nguồn ban đầu không kèm tệp `LICENSE` hoặc giấy phép phân phối. Vì vậy, việc đưa mã lên repository công khai không tự động cấp quyền tái sử dụng hay phân phối lại các thành phần của bên thứ ba. Hãy kiểm tra điều khoản của tác giả/chủ sở hữu trước khi chia sẻ rộng rãi hoặc sử dụng thương mại; chỉ thêm giấy phép phù hợp khi đã có căn cứ cấp quyền.

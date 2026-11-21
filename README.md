@@ -46,14 +46,6 @@ Không cần cài đặt Node.js hoặc tải thư viện qua CDN để chạy p
 
 Hai gói `*.bundle.gz` được trang web giải nén trong trình duyệt khi khởi chạy.
 
-## Triển khai bằng GitHub Pages
-
-1. Mở **Settings → Pages** trong repository.
-2. Ở mục **Build and deployment**, chọn **Deploy from a branch**.
-3. Chọn nhánh `main` và thư mục `/(root)`.
-4. Nhấn **Save** và chờ GitHub Pages hoàn tất triển khai.
-5. Mở đường dẫn website được hiển thị tại trang Pages.
-
 ## Giấy phép
 
 Phần mã nguồn và tài liệu gốc do **BaoBao-creator** sở hữu trong repository này được cấp phép theo **MIT License**. Bạn có thể sử dụng, sao chép, chỉnh sửa, kết hợp, phân phối và sử dụng thương mại phần được cấp phép, với điều kiện giữ lại thông báo bản quyền và nội dung giấy phép.

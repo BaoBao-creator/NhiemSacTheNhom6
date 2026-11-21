@@ -1,6 +1,6 @@
 # Thông báo về thành phần bên thứ ba
 
-Repository có đóng gói một số thư viện bên thứ ba cùng với mã ứng dụng.
+Repository có sử dụng và đóng gói một số thư viện bên thứ ba cùng với mã ứng dụng.
 
 ## Các thư viện xác định được
 
@@ -15,6 +15,6 @@ Các thông báo bản quyền và điều khoản của từng thư viện vẫ
 
 ## Các thành phần cần xác minh thêm
 
-Gói ZIP nguồn được cung cấp có các thành phần mang tên/đường dẫn liên quan đến `VisuKit`, `tutor-show`, `buehne` và `heyprof.app`. Gói ZIP không kèm giấy phép hoặc văn bản cho phép tái phân phối riêng cho những thành phần này, nên repository **không khẳng định** chúng thuộc MIT License của dự án.
+Một số thành phần trong mã nguồn có tên hoặc đường dẫn liên quan đến `VisuKit`, `tutor-show`, `buehne` và `heyprof.app`. Chưa xác định được giấy phép riêng hoặc quyền tái phân phối cho các thành phần này, vì vậy repository **không khẳng định** chúng thuộc MIT License của dự án.
 
 Trước khi sao chép, chỉnh sửa hoặc phân phối riêng các thành phần chưa xác minh, hãy kiểm tra giấy phép hoặc xin phép chủ sở hữu quyền tương ứng. MIT License ở thư mục gốc chỉ áp dụng cho phần mã nguồn và tài liệu gốc mà BaoBao-creator có quyền cấp phép; không thể cấp lại quyền đối với tài sản của người khác.

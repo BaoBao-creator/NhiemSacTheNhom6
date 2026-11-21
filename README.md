@@ -1,8 +1,8 @@
 # Nhiễm Sắc Thể – Nhóm 6
 
-Website học tập tương tác giúp người xem khám phá cấu trúc ADN bằng mô hình 3D. Người dùng có thể quan sát ADN ở nhiều cấp độ, xoay và phóng to mô hình, tìm hiểu cách các bazơ liên kết với nhau và thử tạo mạch ADN bổ sung.
+Website học tập tương tác giúp khám phá cấu trúc ADN thông qua mô hình 3D. Người dùng có thể quan sát ADN ở nhiều cấp độ, xoay và phóng to mô hình, tìm hiểu cách các bazơ liên kết với nhau và thử tạo mạch ADN bổ sung.
 
-Mã nguồn website trong repository được **Agent lập trình của nhóm chuẩn bị**. Nhóm sử dụng repository này để lưu trữ, chia sẻ và triển khai sản phẩm. Bản đang công bố đã được Việt hóa giao diện và nội dung hiển thị.
+Website hiện có giao diện và nội dung bằng tiếng Việt, phù hợp cho việc học tập và tìm hiểu cấu trúc vật chất di truyền.
 
 ## Nội dung và tính năng
 
@@ -17,13 +17,13 @@ Mã nguồn website trong repository được **Agent lập trình của nhóm c
 
 ### Xem trực tiếp
 
-Sau khi bật GitHub Pages, website có thể được truy cập tại:
+Website được triển khai qua GitHub Pages tại:
 
 **https://baobao-creator.github.io/NhiemSacTheNhom6/**
 
 ### Chạy trên máy tính
 
-Có thể chạy website bằng một máy chủ web tĩnh. Mở Terminal/PowerShell tại thư mục chứa các tệp và chạy:
+Có thể chạy website bằng một máy chủ web tĩnh. Mở Terminal/PowerShell tại thư mục dự án và chạy:
 
 ```powershell
 py -m http.server 8000
@@ -31,7 +31,7 @@ py -m http.server 8000
 
 Sau đó mở http://localhost:8000 trên trình duyệt.
 
-Không cần cài đặt Node.js hay tải thêm thư viện qua CDN để chạy bản đã đóng gói trong repository.
+Không cần cài đặt Node.js hoặc tải thư viện qua CDN để chạy phiên bản đã đóng gói trong repository.
 
 ## Cấu trúc tệp
 
@@ -40,8 +40,8 @@ Không cần cài đặt Node.js hay tải thêm thư viện qua CDN để chạ
 | `index.html` | Trang web chính, giao diện và nội dung tiếng Việt |
 | `vendor.bundle.gz` | Các thư viện dùng cho hiển thị 3D và công thức |
 | `assets.bundle.gz` | Mã mô hình, nội dung và logic tương tác của website |
-| `README.md` | Giới thiệu dự án và hướng dẫn sử dụng |
-| `LICENSE` | Giấy phép MIT cho phần mã nguồn thuộc quyền cấp phép của chủ repository |
+| `README.md` | Giới thiệu website và hướng dẫn sử dụng |
+| `LICENSE` | Giấy phép MIT |
 | `THIRD_PARTY_NOTICES.md` | Thông tin giấy phép và lưu ý về thành phần bên thứ ba |
 
 Hai gói `*.bundle.gz` được trang web giải nén trong trình duyệt khi khởi chạy.
